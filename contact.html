@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Booking - Destoura Tours & Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Contact & Booking</h1></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="packages.html">Packages</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <p>Email: info@destoura.com</p>
+    <p>Phone: +971-XXX-XXXXXXX</p>
+    <p>Location: Dubai, United Arab Emirates</p>
+  </section>
+
+  <section>
+    <h2>Book Your Trip</h2>
+    <form action="https://formspree.io/f/your-email" method="POST">
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Phone:</label><br>
+      <input type="tel" name="phone"><br><br>
+
+      <label>Service Interested In:</label><br>
+      <select name="service" required>
+        <option value="">-- Select --</option>
+        <option value="Visa Assistance">Visa Assistance</option>
+        <option value="Flight Booking">Flight Booking</option>
+        <option value="Hotel Booking">Hotel Booking</option>
+        <option value="Holiday Package">Holiday Package</option>
+        <option value="Inbound Tourism (UAE)">Inbound Tourism (UAE)</option>
+        <option value="Corporate Travel">Corporate Travel</option>
+        <option value="Medical/Wellness">Medical/Wellness Tourism</option>
+        <option value="Transfers">Transfers</option>
+      </select><br><br>
+
+      <label>Travel Dates:</label><br>
+      <input type="date" name="start-date"> to <input type="date" name="end-date"><br><br>
+
+      <label>Number of Travelers:</label><br>
+      <input type="number" name="travelers" min="1" value="1"><br><br>
+
+      <label>Message / Special Requests:</label><br>
+      <textarea name="message" rows="5"></textarea><br><br>
+
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Destoura Tours & Travels L.L.C | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
